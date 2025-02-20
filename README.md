@@ -25,3 +25,8 @@ Explicació dels paràmetres:
 -p 5900:5900: Exposa el port 5900 del contenidor a l'amfitrió per a connexions VNC.
 
 --name nom-contenidor: Assigna un nom al contenidor.
+
+## Acces VNC
+En un client VNC intrudueixes 
+        localhost:5901
+Intrudueixes contrsenya i ja pots accedir.
