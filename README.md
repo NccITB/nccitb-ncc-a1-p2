@@ -10,7 +10,7 @@ Per construir la imatge Docker, assegura't de tenir Docker instal·lat al teu si
 
 Aquesta comanda crearà una imatge amb el nom i etiqueta especificats.
 
-https://hub.docker.com/r/nccitb/ncc-a1-p2
+https://hub.docker.com/r/nccitb/ncc-a1-p2/tags
 
 ## Executar un nou contenidor amb docker run
 
