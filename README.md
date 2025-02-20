@@ -1,20 +1,22 @@
-Nom del Projecte
+# Docker
 
-Aquest projecte consisteix en la creació i publicació d'una imatge Docker amb suport per a connexions VNC.
+Heu de crear una imatge de docker usant un dockerfile basat en Ubuntu 24.04 que contingui un entorn gràfic amb XFCE i un servidor VNC, i visual studio code i python, i ssh. 
 
-Construir la Imatge Docker
+## Construir la Imatge Docker
 
 Per construir la imatge Docker, assegura't de tenir Docker instal·lat al teu sistema. Després, executa la següent comanda al directori on es troba el teu Dockerfile:
 
-docker build -t nom-usuari/nom-imatge:latest .
+    docker build -t nccitb/ncc-a1-p2:latest .
 
 Aquesta comanda crearà una imatge amb el nom i etiqueta especificats.
 
-Executar un Nou Contenidor
+https://hub.docker.com/r/nccitb/ncc-a1-p2
+
+## Executar un nou contenidor amb docker run
 
 Un cop la imatge estigui construïda, pots executar un nou contenidor amb la següent comanda:
 
-docker run -d -p 5900:5900 --name nom-contenidor nom-usuari/nom-imatge:latest
+    docker run -d -p 5900:5900 --name nom-contenidor nccitb/ncc-a1-p2:latest
 
 Explicació dels paràmetres:
 
@@ -23,30 +25,3 @@ Explicació dels paràmetres:
 -p 5900:5900: Exposa el port 5900 del contenidor a l'amfitrió per a connexions VNC.
 
 --name nom-contenidor: Assigna un nom al contenidor.
-
-Connectar-se amb un Client VNC
-
-Per accedir a l'entorn gràfic del teu contenidor, necessitaràs un client VNC com TigerVNC o RealVNC. Segueix aquests passos:
-
-Instal·la un client VNC: Descarrega i instal·la el client de la teva preferència.
-
-Obre el client VNC.
-
-Crea una nova connexió:
-
-Direcció: localhost:5900
-
-Nom de la connexió: (opcional, descriptiu)
-
-Inicia la connexió i, si es demana, introdueix la contrasenya del servidor VNC.
-
-Un cop autenticat, hauràs de veure l'entorn d'escriptori proporcionat pel contenidor Docker.
-
-URL Pública de Docker Hub
-
-Pots trobar aquesta imatge Docker al Docker Hub a la següent URL:
-
-https://hub.docker.com/r/nom-usuari/nom-imatge
-
-(Sustitueix nom-usuari i nom-imatge pels valors reals del teu projecte).
-
