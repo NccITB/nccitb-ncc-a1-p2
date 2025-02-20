@@ -28,5 +28,7 @@ Explicació dels paràmetres:
 
 ## Acces VNC
 En un client VNC intrudueixes 
-        localhost:5901
+
+    localhost:5901
+
 Intrudueixes contrsenya i ja pots accedir.
